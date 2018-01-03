@@ -38,12 +38,53 @@
 
 <h1>The OP Domain Specific Languages</h1>
 <p>The OP DSL page hosts two Embedded Domain Specific Languages (DSLs):</p>
-<p><a href="http://op-dsl.github.com/OP2-Common/">OP2</a>: a programming abstraction for writing unstructured mesh algorithms, and the corresponding software library and code translation tools to enable automatic parallelisation of the high-level code.</p>
+<p><a href="http://github.com/OP-DSL/OP2-Common">OP2</a>: a programming abstraction for writing unstructured mesh algorithms, and the corresponding software library and code translation tools to enable automatic parallelisation of the high-level code.</p>
 
-<p><a href="http://op-dsl.github.com/OPS/">OPS</a>: a programming abstraction for writing multi-block structured mesh algorithms, and the corresponding software library and code translation tools to enable automatic parallelisation of the high-level code.</p>
+<p><a href="http://github.com/OP-DSL/OPS">OPS</a>: a programming abstraction for writing multi-block structured mesh algorithms, and the corresponding software library and code translation tools to enable automatic parallelisation of the high-level code.</p>
 
-<h1>Tools</h1>
+<p>Main contacts are:</p>
+<ul>
+  <li><a href='mailt&#111;&#58;g&#46;m&#117;&#100;al&#37;69ge&#64;&#119;&#97;rw%&#54;9ck&#46;ac&#46;uk'>Gihan Mudalige (University of Warwick, Coventry, UK)</a></li>
+  <li><a href='ma&#105;l&#116;o&#58;%&#55;2egu&#37;6Cy&#46;%69s%&#55;4&#118;&#97;%6E&#64;itk%2E%&#55;0&#112;ke&#46;h%&#55;5'>Istvan Reguly (Pazmany Peter Catholic University, Budapest, Hungary)</a></li>
+</ul>
+Mike Giles (Oxford) launched the two projects, other past and current collaborators include: Attila Sulyok, Daniel Balogh, Carlo Bertolli, Lawrence Mitchell, Endre László, Ben Spencer, Adam Betts, David Ham, Paul Kelly, Nicolas Loriant, Graham Markall, Florian Rathgeber, Yoon Ho, Leigh Lapworth, David Radford, Matt Street, Massimiliano Leoni, Nick Hills and others.
+<hr/>
+<h1>OP2</h1>
+<p>The OP2 project is developing an open-source framework for the execution of unstructured grid applications on clusters of GPUs or multi-core CPUs. Although OP2 is designed to look like a conventional library, the implementation uses source-source translation to generate the appropriate back-end code for the different target platforms.</p>
 
+<h2>Details</h2>
+<ul>
+<li>Users manual <a title="op2-user-doc" href="/sites/default/files/uploads/ProjectFiles/OP2/OP2_Users_Guide.pdf">(PDF)</a></li>
+<li>Developers guide <a title="op2-dev-doc" href="/sites/default/files/uploads/ProjectFiles/OP2/dev.pdf">(PDF)</a></li>
+<li>Distributed memory (MPI) developer guide (<a title="op2-mpi-dev-doc" href="/sites/default/files/uploads/ProjectFiles/OP2/mpi-dev.pdf">PDF</a>) </li>
+<li>Airfoil example guide (<a title="Airfoil Testcase Guide" href="/sites/default/files/uploads/ProjectFiles/OP2/airfoil-doc.pdf">PDF</a>)</li>
+<li>Latest code available on <a class="external-link" href="http://github.com/OP-DSL/OP2-Common">git-hub</a> repository</li>
+
+</ul>
+
+<p>Funding for the OP2 development is coming from:</p>
+<ul>
+  <li>Rolls-Royce plc and the Technology Strategy Board through support for the Siloet project</li>
+  <li>EPSRC through support for the project on "Multilayer Abstractions for Partial Differential Equations on Multicore and Manycore Systems", a collaboration with Prof Paul Kelly at Imperial College</li>
+  <li>NVIDIA through hardware donations</li>
+</ul>
+<hr/>
+
+<h1>OPS</h1>
+<p>The OPS (Oxford Parallel Structured software) project is developing an open-source framework for the execution of multi-block structured mesh applications on clusters of GPUs or multi-core CPUs and accelerators. Although OPS is designed to look like a conventional library, the implementation uses source-source translation to generate the appropriate back-end code for the different target platforms.</p>
+
+<h2>Details</h2>
+<ul>
+<li>User API documentation (<a href="/sites/default/files/uploads/ProjectFiles/OPS/user.pdf">PDF</a>) - updated  22/12/2015</li>
+<li>Latest code available on <a href="https://github.com/OP-DSL/OPS">git-hub</a> repository</li>
+</ul>
+
+<p>Funding for the OPS development is coming from:</p>
+<ul>
+  <li><a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K038494/1">EPSRC</a> through support for the project on "Future-proof massively-parallel execution of multi-block applications"</li>
+  <li>UK Atomic Weapons Establishment under grants CDK0660 (The Production of Predictive Models for Future Computing Requirements) and CDK0724 (AWE Technical Outreach Programe)</li>
+  <li>Royal Society through their Industry Fellowship Scheme (IF090020/AM)</li>
+</ul>
 <hr/>
 
 <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
