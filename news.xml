@@ -2,13 +2,24 @@
 <rss version="2.0">
 
 <channel>
-  <title>UK Mini-App Consortium News</title>
-  <link>http://uk-mac.github.io/news.html</link>
-  <description>News and updates from UK-MAC</description>
+  <title>OP DSL News</title>
+  <link>http://op-dsl.github.io/news.html</link>
+  <description>News and updates from OP DSL</description>
+    <item>
+    <title>24/11/17 - Paper accepted</title>
+    <link>https://arxiv.org/abs/1704.00693</link>
+    <description>Paper accepted in IEEE TPDS: Istvan Z Reguly, G.R Mudalige, Mike B Giles. Loop Tiling in Large-Scale Stencil Codes at Run-time with OPS. (2017) IEEE Transactions on Parallel and Distributed Systems, doi:10.1109/TPDS.2017.2778161</description>
+  </item>
+    <item>
+    <title>13/11/17 - Paper presentation</title>
+    <link>https://arxiv.org/abs/1711.01845</link>
+    <description>Daniel Balogh presented the paper "Comparison of Parallelisation Approaches, Languages, and Compilers for Unstructured Mesh Algorithms on GPUs" by G. D. Balogh, I. Reguly and G. Mudalige, at the Performance Modeling, Benchmarking and Simulation 
+of High Performance Computer Systems (PMBS17) Workshop, at Supercomputing 17 in Denver Colorado.</description>
+  </item>
   <item>
-    <title>19/11/14 - Mantevo 3.0 Release</title>
-    <link>http://uk-mac.github.io/news.html#mantevo3.0</link>
-    <description>Mantevo 3.0 released featuring four UK-MAC mini-apps.</description>
+    <title>12/11/17 - Paper presentation</title>
+    <link>https://arxiv.org/abs/1709.02125</link>
+    <description>Istvan Reguly presented the paper "Beyond 16GB: Out-of-Core Stencil Computations" by I Reguly, G Mudalige and M Giles, at MCHPC'17: Workshop on Memory Centric Programming for HPC, at Supercomputing 17 in Denver Colorado.</description>
   </item>
 </channel>
 
