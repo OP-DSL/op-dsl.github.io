@@ -47,17 +47,89 @@
         </ul>
         <h3>Potential future projects</h3>
         <ul>
-          <li> Visualisaiton - using Catalyst </li>
-          <li> Continuous intagration - testing, regression tests, etc. </li>
-          <li> CMAKE build system supporting different compilers, targets, etc </li>
-          <li> Tridiagonal solver support over MPI in OPS </li>
-          <li> Developing Just-in-Time compilation use cases </li>
-          <li> Hybrid CPU/GPU execution with runtime dependency analysis </li>
-          <li> Translator for Fortran code -> OP2/OPS code: outlining loop bodies and replacing loop with OPS/OP2 call</li>
+          <li> Visualisaiton
+            <ul>
+              <li>Type: new core feature</li>
+              <li>Difficulty: medium</li>
+              <li>Description: visually analysing the results of the simulation is key for scientific insight. This can be done either off-line, once the simulation finished, or on-line as the simulation is progressing. This project involves understanding the VTK format and data structures, and implementing support for writing datasets to file for off-line visualisation, followed by doing this on-line using the Catalyst framework</li>
+              <li>Mentor: Istvan Reguly</li>
+            </ul>
+          </li>
+          <li> Continuous integration
+          <ul>
+              <li>Type: build system</li>
+              <li>Difficulty: medium</li>
+              <li>Description: continuous integration is key in long-term code development and the maintenance of our codes. The project involves setting up unit and regression tests for different parts of the code, and integration into the github environment, to automate these tasks.</li>
+              <li>Mentor: Gihan Mudalige</li>
+            </ul>
+          </li>
+          <li> CMAKE build system
+            <ul>
+              <li>Type: build system</li>
+              <li>Difficulty: easy</li>
+              <li>Description: OPS and OP2 currently mainly use GNU make to build the source code, and support different compilers and platforms. The project would involve developing cmake support, that can detect and work with different discributed memory environments, compilers (GNU, Clang, PGI, Intel, IBM XL), customise flags for a variety of compiler-parallelisation combinations, and hardware (instruction sets in CPUs, different GPU generations).</li>
+              <li>Mentor: Istvan Reguly</li>
+            </ul>
+          </li>
+          <li> Tridiagonal solver
+            <ul>
+              <li>Type: core feature</li>
+              <li>Difficulty: medium</li>
+              <li>Description: tridiagonal equations commonly come up in structured meshes, when using implicit solvers. A common algorithm is ADI (Alternating Direction Implicit) which solves these equations along different axes when dealing with a 2 or larger dimensional problem. The Thomas algorithm and the Parallel Cyclic Reduction are some of the commonly used algorithms to solve this. The goal of the project is to extend these algorithms to work in a distributed memory environment, to provide a globally coherent solution.</li>
+              <li>Mentor: Gihan Mudalige</li>
+            </ul>
+          </li>
+          <li> Just-in-Time compilation use cases
+          <ul>
+              <li>Type: extension</li>
+              <li>Difficulty: hard</li>
+              <li>Description: JIT is a core feature being developed into OPS and OP2, which allows to re-compile certain (performance-sensitive) parts of the code at run-time, at which point several parameters are known and fixed. The project will explore different optimisations that can be applied this way: hard-coding loop bounds, runtime constants, applying loop fusion or splitting, using external tools such as polyhedral compilers, etc.</li>
+              <li>Mentor: Gihan Mudalige</li>
+            </ul>
+          </li>
+          <li> Hybrid CPU/GPU execution
+            <ul>
+              <li>Type: core feature</li>
+              <li>Difficulty: medium</li>
+              <li>Description: OPS and OP2 can already use CPUs or GPUs, but not yet together. A key challenge is that the relative performance between the two changes between computational phases, therefore load balancing should be highly dynamic. This project will explore dynamic load balancing techniques and libraries that can be integrated into OPS or OP2.</li>
+              <li>Mentor: Istvan Reguly</li>
+            </ul>
+          </li>
+          <li> Conversion tool for Fortran
+            <ul>
+              <li>Type: compilers</li>
+              <li>Difficulty: hard</li>
+              <li>Description: converting legacy applications to use the OPS and OP2 APIs is relatively strightforward for most codes, but is still a very manual process. This project will look into using Flang to analyse simple tightly nested loops and determine access patterns, then outline the loop body and replace it with a call to OPS or OP2.</li>
+              <li>Mentor: Gihan Mudalige</li>
+            </ul>
+          </li>
         </ul>
         <!-- <p>If you would like to contribute a new mini-app, or a language port of an exisiting one, then we would like to hear from you. Please contact us via the <a href="https://github.com/op-dsl">Github page</a> or <a class="meta-link" href="mailto:&#x70;&#x63;&#x61;&#x76;&#x2d;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x40;&#x64;&#x63;&#x73;&#x2e;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;" itemprop="email">&#x70;&#x63;&#x61;&#x76;&#x2d;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x40;&#x64;&#x63;&#x73;&#x2e;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;</a>.</p>
        -->
       	<hr />
+        <h3>Project submission</h3>
+        <p>If you are interested in working with us as a student, please get in touch via email, and add the following details</p>
+        <ul>
+          <li> Personal details
+            <ul>
+              <li>Name, University, Program, Email</li>
+              <li>Availability: When during the summer, and how much time will you be able to spend on this work?</li>
+            </ul>
+          </li>
+          <li> Background
+            <ul>
+              <li>Summarise your prior experience (education, projects, any codes you have been working on)</li>
+              <li>What is your programming background (languages, projects, jobs)?</li>
+              <li>What is your interest in working with us and the project you propose? Do you have any experience in doing something similar?</li>
+              <li>Are you familiar with Linux, developing and building source code under Linux?</li>
+            </ul>
+          </li>
+          <li> Project proposal
+            <ul>
+              <li>Please describe what you propose to work on</li>
+            </ul>
+          </li>
+        </ul>
       	<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       
       </section>
