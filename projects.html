@@ -40,21 +40,20 @@
         <p>This page lists a number of ongoing and potential future projects</p>
         <h3>Ongoing projects</h3>
         <ul>
+          <li>Tri-(and multi-) diagonal solver development and integration to OPS</li>
+          <li>New code-gen system with Clang/libtooling/MLIR</li>
           <li>Adaptive Mesh Refinement in OPS</li>
-          <li>Clang/libtooling compiler system for translation</li>
-          <li>Coupling with different parallel software, particularly over MPI (e.g. sparse linear solver, FFT)</li>
+          <li>Coupling different parallel software (e.g. sparse linear solver, FFT)</li>
           <li>Multi-material data structures</li>
         </ul>
-        <h3>Potential future projects</h3>
+        <h3>Future features and projects</h3>
         <ul>
           <li> Visualisaiton
-            <ul>
-              <li>Type: new core feature</li>
-              <li>Difficulty: medium</li>
-              <li>Description: visually analysing the results of the simulation is key for scientific insight. This can be done either off-line, once the simulation finished, or on-line as the simulation is progressing. This project involves understanding the VTK format and data structures, and implementing support for writing datasets to file for off-line visualisation, followed by doing this on-line using the Catalyst framework</li>
-            </ul>
-          </li>
-          <li> Continuous integration
+          </br>Type: new core feature
+          </br>Difficulty: medium
+          </br>Description: visually analysing the results of the simulation is key for scientific insight. This can be done either off-line, once the simulation finished, or on-line as the simulation is progressing. This project involves understanding the VTK format and data structures, and implementing support for writing datasets to file for off-line visualisation, followed by doing this on-line using the Catalyst framework</li></br>
+
+          <!-- <li> Continuous integration for OP2
           <ul>
               <li>Type: build system</li>
               <li>Difficulty: medium</li>
@@ -88,18 +87,17 @@
               <li>Difficulty: medium</li>
               <li>Description: OPS and OP2 can already use CPUs or GPUs, but not yet together. A key challenge is that the relative performance between the two changes between computational phases, therefore load balancing should be highly dynamic. This project will explore dynamic load balancing techniques and libraries that can be integrated into OPS or OP2.</li>
             </ul>
-          </li>
+          </li>-->
           <li> Conversion tool for Fortran
-            <ul>
-              <li>Type: compilers</li>
-              <li>Difficulty: hard</li>
-              <li>Description: converting legacy applications to use the OPS and OP2 APIs is relatively strightforward for most codes, but is still a very manual process. This project will look into using Flang to analyse simple tightly nested loops and determine access patterns, then outline the loop body and replace it with a call to OPS or OP2.</li>
-            </ul>
+          </br>Type: compilers
+          </br>Difficulty: hard
+          </br>Description: converting legacy applications to use the OPS and OP2 APIs is relatively strightforward for most codes, but is still a very manual process. This project will look into using Flang to analyse simple tightly nested loops and determine access patterns, then outline the loop body and replace it with a call to OPS or OP2.
           </li>
         </ul>
         <!-- <p>If you would like to contribute a new mini-app, or a language port of an exisiting one, then we would like to hear from you. Please contact us via the <a href="https://github.com/op-dsl">Github page</a> or <a class="meta-link" href="mailto:&#x70;&#x63;&#x61;&#x76;&#x2d;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x40;&#x64;&#x63;&#x73;&#x2e;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;" itemprop="email">&#x70;&#x63;&#x61;&#x76;&#x2d;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x40;&#x64;&#x63;&#x73;&#x2e;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;</a>.</p>
        -->
       	<hr />
+        <!--
         <h3>Project submission</h3>
         <p>If you are interested in working with us as a student, please get in touch via email, and add the following details</p>
         <ul>
@@ -124,7 +122,7 @@
           </li>
         </ul>
       	<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      
+      -->
       </section>
     </div>
     <script src="javascripts/scale.fix.js"></script>
