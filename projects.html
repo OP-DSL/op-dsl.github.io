@@ -24,12 +24,10 @@
 	</h1>
         <hr/> 
 	<h1><a href="index.html">&lt Home</a></h1>
-        <hr />  
-        <h1><a href="news.html">News</a></h1>
-        <hr />  
-        <h1><a href="projects.html">Projects</a></h1>
         <hr />
-        <h1><a href="codes.html">Codes</a></h1>
+        <h1><a href="codes.html">Users & Codes</a></h1>
+        <hr />
+        <h1><a href="projects.html">Projects</a></h1>
         <hr />
         <h1><a href="papers.html">Papers</a></h1>
         <hr />
@@ -54,7 +52,6 @@
               <li>Type: new core feature</li>
               <li>Difficulty: medium</li>
               <li>Description: visually analysing the results of the simulation is key for scientific insight. This can be done either off-line, once the simulation finished, or on-line as the simulation is progressing. This project involves understanding the VTK format and data structures, and implementing support for writing datasets to file for off-line visualisation, followed by doing this on-line using the Catalyst framework</li>
-              <li>Mentor: Istvan Reguly</li>
             </ul>
           </li>
           <li> Continuous integration
@@ -62,7 +59,6 @@
               <li>Type: build system</li>
               <li>Difficulty: medium</li>
               <li>Description: continuous integration is key in long-term code development and the maintenance of our codes. The project involves setting up unit and regression tests for different parts of the code, and integration into the github environment, to automate these tasks.</li>
-              <li>Mentor: Gihan Mudalige</li>
             </ul>
           </li>
           <li> CMAKE build system
@@ -70,7 +66,6 @@
               <li>Type: build system</li>
               <li>Difficulty: easy</li>
               <li>Description: OPS and OP2 currently mainly use GNU make to build the source code, and support different compilers and platforms. The project would involve developing cmake support, that can detect and work with different discributed memory environments, compilers (GNU, Clang, PGI, Intel, IBM XL), customise flags for a variety of compiler-parallelisation combinations, and hardware (instruction sets in CPUs, different GPU generations).</li>
-              <li>Mentor: Istvan Reguly</li>
             </ul>
           </li>
           <li> Tridiagonal solver
@@ -78,7 +73,6 @@
               <li>Type: core feature</li>
               <li>Difficulty: medium</li>
               <li>Description: tridiagonal equations commonly come up in structured meshes, when using implicit solvers. A common algorithm is ADI (Alternating Direction Implicit) which solves these equations along different axes when dealing with a 2 or larger dimensional problem. The Thomas algorithm and the Parallel Cyclic Reduction are some of the commonly used algorithms to solve this. The goal of the project is to extend these algorithms to work in a distributed memory environment, to provide a globally coherent solution.</li>
-              <li>Mentor: Gihan Mudalige</li>
             </ul>
           </li>
           <li> Just-in-Time compilation use cases
@@ -86,7 +80,6 @@
               <li>Type: extension</li>
               <li>Difficulty: hard</li>
               <li>Description: JIT is a core feature being developed into OPS and OP2, which allows to re-compile certain (performance-sensitive) parts of the code at run-time, at which point several parameters are known and fixed. The project will explore different optimisations that can be applied this way: hard-coding loop bounds, runtime constants, applying loop fusion or splitting, using external tools such as polyhedral compilers, etc.</li>
-              <li>Mentor: Gihan Mudalige</li>
             </ul>
           </li>
           <li> Hybrid CPU/GPU execution
@@ -94,7 +87,6 @@
               <li>Type: core feature</li>
               <li>Difficulty: medium</li>
               <li>Description: OPS and OP2 can already use CPUs or GPUs, but not yet together. A key challenge is that the relative performance between the two changes between computational phases, therefore load balancing should be highly dynamic. This project will explore dynamic load balancing techniques and libraries that can be integrated into OPS or OP2.</li>
-              <li>Mentor: Istvan Reguly</li>
             </ul>
           </li>
           <li> Conversion tool for Fortran
@@ -102,7 +94,6 @@
               <li>Type: compilers</li>
               <li>Difficulty: hard</li>
               <li>Description: converting legacy applications to use the OPS and OP2 APIs is relatively strightforward for most codes, but is still a very manual process. This project will look into using Flang to analyse simple tightly nested loops and determine access patterns, then outline the loop body and replace it with a call to OPS or OP2.</li>
-              <li>Mentor: Gihan Mudalige</li>
             </ul>
           </li>
         </ul>
